@@ -125,7 +125,7 @@ const JoinCTA = () => {
             transition={{ delay: 0.8 }}
           >
             <div>
-              <div className="text-3xl font-bold text-white mb-2">500+</div>
+              <div className="text-3xl font-bold text-white mb-2">350+</div>
               <div className="text-white/80 text-sm">Members</div>
             </div>
             <div>
