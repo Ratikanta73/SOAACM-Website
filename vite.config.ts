@@ -4,14 +4,14 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/', 
+  base: '/', // 👈 ADD THIS LINE
   plugins: [
     react(),
     tailwindcss(),
   ],
   resolve: {
     alias: {
-      '@': path.resolve(_dirname, './src'),
+      '@': path.resolve(__dirname, './src'),
     },
   },
 })
