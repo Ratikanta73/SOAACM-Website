@@ -10,7 +10,7 @@ const Impact = () => {
   const stats = [
     {
       icon: Users,
-      value: 500,
+      value: 350,
       suffix: '+',
       label: 'Active Members',
       color: 'var(--acm-blue)',

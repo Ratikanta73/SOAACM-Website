@@ -145,7 +145,7 @@ const Benefits = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
         >
           <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Join a community of over 500+ students who are learning, building, and growing together.
+            Join a community of over 350+ students who are learning, building, and growing together.
             Your journey to becoming a computing professional starts here.
           </p>
         </motion.div>

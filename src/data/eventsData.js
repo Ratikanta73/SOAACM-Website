@@ -6,8 +6,8 @@ export const eventsData = [
     time: '04:30 PM - 6:00 PM IST',
     type: 'Workshop',
     mode: 'Offline',
-    // status: 'past',
-    status: 'upcoming',
+    status: 'past',
+    // status: 'upcoming',
     category: 'Session',
     description:
       'Practical introduction to the research fundamentals and guidelines for poster presentation.',

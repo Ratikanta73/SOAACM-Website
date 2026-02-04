@@ -41,7 +41,7 @@ const Team = () => {
   const coreTeam = [
     {
       name: 'Debajyoti Bhakta',
-      role: 'Chairman',
+      role: 'Chair',
       image:
         '/Images/1.webp',
       linkedin: 'https://www.linkedin.com/in/debajyoti-bhakta/',
