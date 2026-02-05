@@ -1,6 +1,8 @@
 import { motion, useMotionValue, useTransform, useSpring } from 'motion/react';
 import { useRef } from 'react';
 import { ArrowRight, Sparkles, Code2, Cpu, Network, Zap, Box, Hexagon } from 'lucide-react';
+import soaLogo from '/Images/soa.webp';
+import acmLogo from '/Images/acm.webp';
 
 const Hero = () => {
   const mouseX = useMotionValue(0);
@@ -11,7 +13,7 @@ const Hero = () => {
   const springConfig = { damping: 30, stiffness: 200 };
   const rotateX = useSpring(useTransform(mouseY, [-500, 500], [15, -15]), springConfig);
   const rotateY = useSpring(useTransform(mouseX, [-500, 500], [-15, 15]), springConfig);
-  
+
   // Parallax effects for different layers
   const parallaxX1 = useSpring(useTransform(mouseX, [-500, 500], [-30, 30]), springConfig);
   const parallaxY1 = useSpring(useTransform(mouseY, [-500, 500], [-30, 30]), springConfig);
@@ -53,19 +55,19 @@ const Hero = () => {
   ];
 
   return (
-    <section 
+    <section
       ref={heroRef}
       onMouseMove={handleMouseMove}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black"
     >
       {/* 3D Grid Background with Mouse Interaction */}
-      <motion.div 
+      <motion.div
         className="absolute inset-0"
         style={{
           perspective: '1200px',
         }}
       >
-        <motion.div 
+        <motion.div
           className="absolute inset-0 opacity-60"
           style={{
             rotateX,
@@ -74,7 +76,7 @@ const Hero = () => {
           }}
         >
           {/* Primary 3D Grid */}
-          <div 
+          <div
             className="absolute inset-0 transform-gpu"
             style={{
               // backgroundImage: `
@@ -87,9 +89,9 @@ const Hero = () => {
               backgroundPosition: 'center center',
             }}
           />
-          
+
           {/* Secondary Grid Layer */}
-          <div 
+          <div
             className="absolute inset-0 transform-gpu opacity-40"
             style={{
               // backgroundImage: `
@@ -122,7 +124,7 @@ const Hero = () => {
               top: shape.y,
             }}
             initial={{ opacity: 0, scale: 0, rotateZ: 0 }}
-            animate={{ 
+            animate={{
               opacity: [0.2, 0.4, 0.2],
               scale: 1,
               rotateZ: 360,
@@ -151,12 +153,12 @@ const Hero = () => {
                 filter: `drop-shadow(0 0 12px ${shape.color})`,
               }}
             >
-              <shape.Icon 
-                size={shape.size} 
-                style={{ 
+              <shape.Icon
+                size={shape.size}
+                style={{
                   color: shape.color,
                   strokeWidth: 1,
-                }} 
+                }}
               />
             </motion.div>
           </motion.div>
@@ -180,7 +182,7 @@ const Hero = () => {
               top: `${30 + (index % 2) * 30}%`,
             }}
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ 
+            animate={{
               opacity: [0.3, 0.5, 0.3],
               scale: 1,
               y: [0, -30, 0],
@@ -201,7 +203,7 @@ const Hero = () => {
               transition: { duration: 0.5 }
             }}
           >
-            <motion.div 
+            <motion.div
               className="w-20 h-20 rounded-xl backdrop-blur-md border flex items-center justify-center relative"
               style={{
                 borderColor: orb.color,
@@ -222,7 +224,7 @@ const Hero = () => {
       </motion.div>
 
       {/* Enhanced Particle System with Mouse Interaction */}
-      <motion.div 
+      <motion.div
         className="absolute inset-0"
         style={{
           x: useTransform(mouseX, [-500, 500], [-20, 20]),
@@ -259,6 +261,7 @@ const Hero = () => {
         ))}
       </motion.div>
 
+
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
         <motion.div
@@ -266,6 +269,25 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+          <motion.div
+            className="flex items-center justify-center gap-8 mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
+          >
+            <img
+              src={soaLogo}
+              alt="SOA University Logo"
+              className="h-14 md:h-16 object-contain opacity-90"
+            />
+            <div className="h-10 w-px bg-gray-600/50" />
+            <img
+              src={acmLogo}
+              alt="ACM Logo"
+              className="h-14 md:h-16 object-contain opacity-90"
+            />
+          </motion.div>
+
           {/* Holographic Badge */}
           <motion.div
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full mb-8 relative group cursor-pointer"
@@ -277,7 +299,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
-            whileHover={{ 
+            whileHover={{
               scale: 1.05,
               background: 'rgba(0,133,195,0.25)',
             }}
@@ -293,7 +315,7 @@ const Hero = () => {
 
           {/* Title with Character Split Animation */}
           <div className="mb-6">
-            <motion.h1 
+            <motion.h1
               className="text-6xl md:text-8xl tracking-tight"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -345,7 +367,7 @@ const Hero = () => {
                 border: '2px solid var(--acm-blue)',
                 background: 'rgba(0,133,195,0.08)',
               }}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
                 background: 'rgba(0,133,195,0.15)',
               }}
@@ -361,7 +383,7 @@ const Hero = () => {
           className="absolute bottom-12 left-1/2 transform -translate-x-1/2 cursor-pointer"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, y: [0, 8, 0] }}
-          transition={{ 
+          transition={{
             opacity: { delay: 1.2 },
             y: { delay: 1.2, duration: 2, repeat: Infinity }
           }}
@@ -369,9 +391,9 @@ const Hero = () => {
           whileTap={{ scale: 0.95 }}
           onClick={() => scrollToSection('about')}
         >
-          <div 
+          <div
             className="w-7 h-11 rounded-full p-1.5 backdrop-blur-sm relative"
-            style={{ 
+            style={{
               border: '2px solid var(--acm-blue)',
               background: 'rgba(0,133,195,0.15)',
             }}
@@ -379,7 +401,7 @@ const Hero = () => {
             <motion.div
               className="w-2 h-2 rounded-full mx-auto"
               style={{ background: 'var(--acm-blue)' }}
-              animate={{ 
+              animate={{
                 y: [0, 18, 0],
                 opacity: [1, 0.4, 1],
               }}

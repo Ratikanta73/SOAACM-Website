@@ -129,11 +129,11 @@ const JoinCTA = () => {
               <div className="text-white/80 text-sm">Members</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white mb-2">4+</div>
+              <div className="text-3xl font-bold text-white mb-2">12+</div>
               <div className="text-white/80 text-sm">Events</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white mb-2">2+</div>
+              <div className="text-3xl font-bold text-white mb-2">5+</div>
               <div className="text-white/80 text-sm">Partners</div>
             </div>
           </motion.div>

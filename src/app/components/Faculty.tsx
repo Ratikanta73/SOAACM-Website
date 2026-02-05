@@ -21,7 +21,7 @@ const facultyData = [
     image:
       '/Images/f2.webp',
     quote:
-      'Mission of SOA ACM student chapter is to cultivate a vibrant research culture among students where curiosity is encouraged, ideas are explored collaboratively, and classroom knowledge transforms into meaningful research, innovation, and real-world impact.',
+      'Research does not begin in laboratories, it begins in curious minds. The moment you start questioning how and why things work, you step into the world of discovery. As engineering students, your ideas today can become tomorrow’s breakthroughs.',
   },
 ];
 
