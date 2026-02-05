@@ -48,7 +48,7 @@ const Team = () => {
     },
     {
       name: 'Anshuman Barik',
-      role: 'Vice Chairman',
+      role: 'Vice Chair',
       image:
         '/Images/2.webp',
       linkedin: 'https://www.linkedin.com/in/anshuman-barik',

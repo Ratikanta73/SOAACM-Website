@@ -1,6 +1,36 @@
 export const eventsData = [
   {
     id: '1',
+    title: 'The Research ODYSSEY',
+    date: 'February 05, 2026',
+    time: '04:30 PM - 06:00 PM IST',
+    mode: 'Offline',
+    status: 'past',
+    category: 'Induction',
+    description: 'Official Induction Of SOA ACM Members and Webinar',
+    fullDescription:
+      'The SOA ACM Student Chapter organized a Tech Talk on “Cloud Computing - The Next Frontier” on 27 April 2024 at the Bansuri Guru Auditorium, featuring Mr. Sitesh Behera, Senior DevOps Manager at PLIVO and an ITER alumnus, who shared insights on the evolution of cloud computing, including serverless architectures, AI–cloud integration, cloud security, and emerging career opportunities in cloud and DevOps, engaging over 350 students across multiple disciplines.',
+    image:
+      '/Images/e5h.webp',
+    participants: '250+',
+    location: 'Bansuri Guru Auditorium A',
+    speaker: {
+      name: 'Dr. Dibyasundar Das',
+      designation: 'Assistant Professor, Birla Institute of Technology (BIT)',
+      photo:
+        '/Images/e5s.webp',
+      bio: 'Dr. Dibyasundar Das is an Assistant Professor of CSE at BIT Mesra, Deoghar campus, specializing in Computer Vision and Deep Learning. He earned his Ph.D. from NIT Rourkela (2021) in OCR-focused research and previously served at ITER, SOA University.',
+    },
+    // gallery: [
+    //   '/Images/e2a.webp',
+    //   '/Images/e2b.webp',
+    //   '/Images/e2c.webp',
+    //   '/Images/e2d.webp',
+    // ],
+  },
+
+{
+    id: '5',
     title: 'Research Fundamentals and Effective Poster Presentation',
     date: 'December 20, 2025',
     time: '04:30 PM - 6:00 PM IST',
@@ -34,6 +64,8 @@ export const eventsData = [
       
     ],
   },
+
+  
   {
     id: '2',
     title: 'Mobile App Development with Flutter',
@@ -140,36 +172,8 @@ export const eventsData = [
     '/Images/e3b.webp',
     '/Images/e3c.webp',
   ],
-},
-{
-    id: '5',
-    title: 'The Research ODYSSEY',
-    date: 'February 05, 2026',
-    time: '04:30 PM - 06:00 PM IST',
-    mode: 'Offline',
-    status: 'past',
-    category: 'Induction',
-    description: 'Official Induction Of SOA ACM Members and Webinar',
-    fullDescription:
-      'The SOA ACM Student Chapter organized a Tech Talk on “Cloud Computing - The Next Frontier” on 27 April 2024 at the Bansuri Guru Auditorium, featuring Mr. Sitesh Behera, Senior DevOps Manager at PLIVO and an ITER alumnus, who shared insights on the evolution of cloud computing, including serverless architectures, AI–cloud integration, cloud security, and emerging career opportunities in cloud and DevOps, engaging over 350 students across multiple disciplines.',
-    image:
-      '/Images/e5h.webp',
-    participants: '250+',
-    location: 'Bansuri Guru Auditorium A',
-    speaker: {
-      name: 'Dr. Dibyasundar Das',
-      designation: 'Assistant Professor, Birla Institute of Technology (BIT)',
-      photo:
-        '/Images/e5s.webp',
-      bio: 'Dr. Dibyasundar Das is an Assistant Professor of CSE at BIT Mesra, Deoghar campus, specializing in Computer Vision and Deep Learning. He earned his Ph.D. from NIT Rourkela (2021) in OCR-focused research and previously served at ITER, SOA University.',
-    },
-    // gallery: [
-    //   '/Images/e2a.webp',
-    //   '/Images/e2b.webp',
-    //   '/Images/e2c.webp',
-    //   '/Images/e2d.webp',
-    // ],
-  }
+}
+
 
 ];
 
