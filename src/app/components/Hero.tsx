@@ -310,7 +310,7 @@ const Hero = () => {
             >
               <Sparkles className="w-4 h-4 text-[var(--acm-blue)]" />
             </motion.div>
-            <span className="text-sm text-white relative z-10">Official SOA University Student Chapter 2026</span>
+            <span className="text-sm text-white relative z-10">Official SOA University Student Chapter</span>
           </motion.div>
 
           {/* Title with Character Split Animation */}
