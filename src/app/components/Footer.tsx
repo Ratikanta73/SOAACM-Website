@@ -7,6 +7,7 @@ const Footer = () => {
     { label: 'Events', href: '#events' },
     { label: 'Team', href: '#team' },
     { label: 'Connect', href: '#join' },
+    
   ];
 
   const socialLinks = [
