@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #0b0f1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Particle Canvas */
+#particles {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+}
+
+/* Gradient Background */
+.background {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, #1e3cff, transparent 40%),
+    radial-gradient(circle at 80% 80%, #7a00ff, transparent 40%);
+  animation: bgMove 14s linear infinite alternate;
+  z-index: -2;
+}
+
+@keyframes bgMove {
+  to { filter: hue-rotate(35deg); }
+}
+
+/* Card */
+.card {
+  width: 380px;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.55);
+  text-align: center;
+
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+  box-shadow:
+    0 30px 80px rgba(122, 0, 255, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+/* Logos */
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.logos img {
+  width: 56px;
+  height: 56px;
+  transition: transform 0.4s ease;
+}
+
+.logos img:hover {
+  transform: scale(1.15) rotate(4deg);
+}
+
+/* Text */
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.tagline {
+  font-size: 14px;
+  opacity: 0.75;
+  margin-bottom: 28px;
+}
+
+/* Links */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.link-btn {
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #2563eb, #9333ea);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.link-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 35px rgba(147, 51, 234, 0.45);
+}
+
+/* Footer */
+footer {
+  margin-top: 26px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+  .card {
+    width: 90%;
+    padding: 26px;
+  }
+}

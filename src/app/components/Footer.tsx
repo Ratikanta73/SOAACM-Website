@@ -7,6 +7,7 @@ const Footer = () => {
     { label: 'Events', href: '#events' },
     { label: 'Team', href: '#team' },
     { label: 'Connect', href: '#join' },
+    { label: '',href: 'https://acmconnect.vercel.app/' },
   ];
 
   const socialLinks = [
