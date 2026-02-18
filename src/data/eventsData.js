@@ -8,8 +8,9 @@ export const eventsData = [
     status: 'past',
     category: 'Induction',
     description: 'Official Induction Of SOA ACM Members and Webinar',
+    document: "/documents/SOA ACM HandOut.pdf",
     fullDescription:
-      'The SOA ACM Student Chapter organized a Tech Talk on “Cloud Computing - The Next Frontier” on 27 April 2024 at the Bansuri Guru Auditorium, featuring Mr. Sitesh Behera, Senior DevOps Manager at PLIVO and an ITER alumnus, who shared insights on the evolution of cloud computing, including serverless architectures, AI–cloud integration, cloud security, and emerging career opportunities in cloud and DevOps, engaging over 350 students across multiple disciplines.',
+      'Research Odyssey is the flagship research initiative of ACM, a distinguished talk series conducted twice every month to introduce students to diverse and emerging areas of research in computing and technology. Designed as a platform for intellectual exchange, it brings together researchers, academicians, and innovators to share insights, breakthroughs, and real-world applications across domains. The initiative was launched with the vision of cultivating a strong research culture within the student community—encouraging curiosity beyond the classroom and inspiring deeper engagement with cutting-edge ideas. Through Research Odyssey, ACM aims to bridge the gap between theory and exploration, empower students to think critically, and motivate them to pursue innovation, inquiry, and impactful contributions to the field of computing.',
     image:
       '/Images/e5h.webp',
     participants: '250+',
@@ -21,15 +22,20 @@ export const eventsData = [
         '/Images/e5s.webp',
       bio: 'Dr. Dibyasundar Das is an Assistant Professor of CSE at BIT Mesra, Deoghar campus, specializing in Computer Vision and Deep Learning. He earned his Ph.D. from NIT Rourkela (2021) in OCR-focused research and previously served at ITER, SOA University.',
     },
-    // gallery: [
-    //   '/Images/e2a.webp',
-    //   '/Images/e2b.webp',
-    //   '/Images/e2c.webp',
-    //   '/Images/e2d.webp',
-    // ],
+    gallery: [
+      '/Images/e5a.webp',
+      '/Images/e5b.webp',
+      '/Images/e5c.webp',
+      '/Images/e5d.webp',
+      '/Images/e5e.webp',
+      '/Images/e5f.webp',
+      '/Images/e5g.webp',
+      '/Images/e5hp.webp',
+      '/Images/e5i.webp',
+    ],
   },
 
-{
+  {
     id: '5',
     title: 'Research Fundamentals and Effective Poster Presentation',
     date: 'December 20, 2025',
@@ -61,11 +67,11 @@ export const eventsData = [
       '/Images/e0d.webp',
       '/Images/e0e.webp',
       '/Images/e0f.webp',
-      
+
     ],
   },
 
-  
+
   {
     id: '2',
     title: 'Mobile App Development with Flutter',
@@ -124,55 +130,55 @@ export const eventsData = [
       '/Images/e2d.webp',
     ],
   },
-  
+
   {
-  id: '4',
-  title: '4-Day Training Program on Cloud Computing and DevOps',
-  date: 'May 15-18, 2023',
-  time: '10:00 AM - 4:00 PM IST',
-  mode: 'Offline',
-  status: 'past',
-  category: 'Training Programme',
-  description: 'A hands-on training on cloud computing and DevOps fundamentals.',
-  fullDescription:
-    'A 4-day intensive training program on Cloud Computing and DevOps that provided students with hands-on experience in cloud platforms, automation workflows, CI/CD pipelines, containerization, and real-world application deployment, guided by industry experts to bridge the gap between academic learning and industry practices.',
-  image: '/Images/e3h.webp',
-  participants: '35+',
-  location: 'SOA Campus - Computer Lab',
+    id: '4',
+    title: '4-Day Training Program on Cloud Computing and DevOps',
+    date: 'May 15-18, 2023',
+    time: '10:00 AM - 4:00 PM IST',
+    mode: 'Offline',
+    status: 'past',
+    category: 'Training Programme',
+    description: 'A hands-on training on cloud computing and DevOps fundamentals.',
+    fullDescription:
+      'A 4-day intensive training program on Cloud Computing and DevOps that provided students with hands-on experience in cloud platforms, automation workflows, CI/CD pipelines, containerization, and real-world application deployment, guided by industry experts to bridge the gap between academic learning and industry practices.',
+    image: '/Images/e3h.webp',
+    participants: '35+',
+    location: 'SOA Campus - Computer Lab',
 
-  speakers: [
-    {
-      name: 'Mr. Sourabh Kumar Singh',
-      designation: 'SRE Intern, EPAM',
-      photo: '/Images/e3s1.webp',
-      bio: 'DevOps Intern with hands-on experience in CI/CD pipelines, and containerized infrastructure using Docker and Kubernetes.',
-    },
-    {
-      name: 'Mr. Shri Rijul Das',
-      designation: 'SRE Intern, EPAM',
-      photo: '/Images/e3s2.webp',
-      bio: 'SRE Intern specializing in system reliability, automation, observability, and building fault-tolerant, scalable cloud systems.',
-    },
-    {
-      name: 'Mr. Amrit Kaphley',
-      designation: 'DevOps Intern, PLIVO',
-      photo: '/Images/e3s3.webp',
-      bio: 'DevOps Intern focused on cloud-native infrastructure and optimizing deployment workflows for scalable systems.',
-    },
-    {
-      name: 'Mr. Shashwat K. Pandhey',
-      designation: 'SRE Intern, PLIVO',
-      photo: '/Images/e3s4.webp',
-      bio: 'SRE Intern passionate about reliability engineering, automation, observability, and building resilient, production-grade cloud systems.',
-    },
-  ],
+    speakers: [
+      {
+        name: 'Mr. Sourabh Kumar Singh',
+        designation: 'SRE Intern, EPAM',
+        photo: '/Images/e3s1.webp',
+        bio: 'DevOps Intern with hands-on experience in CI/CD pipelines, and containerized infrastructure using Docker and Kubernetes.',
+      },
+      {
+        name: 'Mr. Shri Rijul Das',
+        designation: 'SRE Intern, EPAM',
+        photo: '/Images/e3s2.webp',
+        bio: 'SRE Intern specializing in system reliability, automation, observability, and building fault-tolerant, scalable cloud systems.',
+      },
+      {
+        name: 'Mr. Amrit Kaphley',
+        designation: 'DevOps Intern, PLIVO',
+        photo: '/Images/e3s3.webp',
+        bio: 'DevOps Intern focused on cloud-native infrastructure and optimizing deployment workflows for scalable systems.',
+      },
+      {
+        name: 'Mr. Shashwat K. Pandhey',
+        designation: 'SRE Intern, PLIVO',
+        photo: '/Images/e3s4.webp',
+        bio: 'SRE Intern passionate about reliability engineering, automation, observability, and building resilient, production-grade cloud systems.',
+      },
+    ],
 
-  gallery: [
-    '/Images/e3a.webp',
-    '/Images/e3b.webp',
-    '/Images/e3c.webp',
-  ],
-}
+    gallery: [
+      '/Images/e3a.webp',
+      '/Images/e3b.webp',
+      '/Images/e3c.webp',
+    ],
+  }
 
 
 ];

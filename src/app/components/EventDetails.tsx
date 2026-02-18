@@ -300,24 +300,27 @@ const EventDetails = () => {
             )}
           </motion.div>
 
-          {/* Sidebar */}
+           {/* Sidebar */}
           <motion.div
-            className="space-y-6"
+            className="sticky top-24 space-y-6"
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            {/* CTA Card */}
-            <div className="bg-gradient-to-br from-[var(--acm-blue)] to-[var(--acm-dark-blue)] rounded-2xl p-8 text-white shadow-2xl sticky top-24">
+
+            {/* Blue CTA Card */}
+            <div className="bg-gradient-to-br from-[var(--acm-blue)] to-[var(--acm-dark-blue)] rounded-2xl p-8 text-white shadow-2xl">
+
               <h3 className="text-2xl font-bold mb-4">
                 {event.status === 'upcoming' ? 'Register Now' : 'Event Concluded'}
               </h3>
+
               {event.status === 'upcoming' ? (
                 <>
                   <p className="mb-6 text-white/90">
                     Don't miss this amazing opportunity to learn and grow!
                   </p>
-                  {/* Change the form link for registration */}
+
                   <a
                     href="https://forms.gle/"
                     target="_blank"
@@ -337,6 +340,7 @@ const EventDetails = () => {
                   This event has concluded. Stay tuned for more upcoming events!
                 </p>
               )}
+
               <div className="mt-6 pt-6 border-t border-white/20">
                 <p className="text-sm text-white/80">
                   Questions? Contact us at
@@ -350,6 +354,19 @@ const EventDetails = () => {
                 </p>
               </div>
             </div>
+
+            {/* ✅ Download Button BELOW blue card but still sticky */}
+            {event.document && (
+              <a
+                href={event.document}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full block text-center py-6 bg-[var(--acm-blue)]/10 text-[var(--acm-blue)] rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-300 mt-4"
+              >
+                Download Hangout 📜
+              </a>
+            )}
 
             {/* Share Card */}
             {/* <div className="bg-white rounded-2xl p-6 shadow-lg">
@@ -374,7 +391,6 @@ const EventDetails = () => {
           </motion.div>
         </div>
       </div>
-
 
 
 
