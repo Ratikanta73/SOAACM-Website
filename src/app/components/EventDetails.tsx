@@ -322,7 +322,7 @@ const EventDetails = () => {
                   </p>
 
                   <a
-                    href="https://forms.gle/"
+                    href="https://forms.gle/WQAiPjrhnEgzTQXy7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

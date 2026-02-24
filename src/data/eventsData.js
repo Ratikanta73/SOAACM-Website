@@ -1,7 +1,37 @@
 export const eventsData = [
   {
     id: '1',
-    title: 'The Research ODYSSEY',
+    title: 'Quantum Computing In 45 Minutes',
+    date: 'February 25, 2026',
+    time: '04:15 PM - 06:00 PM IST',
+    mode: 'Offline',
+    status: 'upcoming',
+    category: 'Session',
+    description: 'The Core Ideas and the Big Opportunities',
+    // document: "/documents/SOA ACM HandOut.pdf",
+    fullDescription:
+      'Quantum Computing in 45 Minutes: The Core Ideas and the Big Opportunities is an engaging and accessible session that takes you beyond classical computing to explore the transformative world of quantum technology. Covering fundamental concepts such as qubits, superposition, and entanglement, the talk also highlights real-world applications across cybersecurity, artificial intelligence, finance, healthcare, and more. Designed for curious students, tech enthusiasts, developers, aspiring researchers, and industry leaders, this session simplifies complex ideas while uncovering the vast opportunities quantum computing offers for innovation, research, and the future of computation.',
+    image:
+      '/Images/e6h.webp',
+    // participants: '150+',
+    location: 'E-Block : 114',
+    speaker: {
+      name: 'Prof. Prasanta K. Panigrahi',
+      designation: 'Former Director IISER Kolkata,Director Center for Quantum Science and Technology, SOA University',
+      photo:
+        '/Images/e6s.webp',
+      bio: 'Prof. Prasanta K. Panigrahi is the Director of CQST at SOA University and former Director of IISER Kolkata. A leading quantum physicist, he heads a prestigious DST-QuEST project on Quantum Information Technologies, serves as an international research evaluator and journal referee, and is a Fellow of the National Academy of Sciences, India.',
+    },
+    // gallery: [
+    //   '/Images/e5a.webp',
+    //   '/Images/e5b.webp',
+    // ],
+  },
+
+
+    {
+    id: '6',
+    title: 'Introduction to Biomedical Engineering & Medical Imaging Processing',
     date: 'February 05, 2026',
     time: '04:30 PM - 06:00 PM IST',
     mode: 'Offline',
