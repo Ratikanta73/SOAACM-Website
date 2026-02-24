@@ -17,7 +17,7 @@ export const eventsData = [
     location: 'E-Block : 114',
     speaker: {
       name: 'Prof. Prasanta K. Panigrahi',
-      designation: 'Former Director IISER Kolkata,Director Center for Quantum Science and Technology, SOA University',
+      designation: 'Former Director IISER Kolkata, Director Center for Quantum Science and Technology, SOA University',
       photo:
         '/Images/e6s.webp',
       bio: 'Prof. Prasanta K. Panigrahi is the Director of CQST at SOA University and former Director of IISER Kolkata. A leading quantum physicist, he heads a prestigious DST-QuEST project on Quantum Information Technologies, serves as an international research evaluator and journal referee, and is a Fellow of the National Academy of Sciences, India.',
