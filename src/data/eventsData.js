@@ -5,7 +5,7 @@ export const eventsData = [
     date: 'February 25, 2026',
     time: '04:15 PM - 06:00 PM IST',
     mode: 'Offline',
-    status: 'upcoming',
+    status: 'past',
     category: 'Session',
     description: 'The Core Ideas and the Big Opportunities',
     // document: "/documents/SOA ACM HandOut.pdf",
@@ -13,7 +13,7 @@ export const eventsData = [
       'Quantum Computing in 45 Minutes: The Core Ideas and the Big Opportunities is an engaging and accessible session that takes you beyond classical computing to explore the transformative world of quantum technology. Covering fundamental concepts such as qubits, superposition, and entanglement, the talk also highlights real-world applications across cybersecurity, artificial intelligence, finance, healthcare, and more. Designed for curious students, tech enthusiasts, developers, aspiring researchers, and industry leaders, this session simplifies complex ideas while uncovering the vast opportunities quantum computing offers for innovation, research, and the future of computation.',
     image:
       '/Images/e6h.webp',
-    // participants: '150+',
+    participants: '80+',
     location: 'E-Block : 114',
     speaker: {
       name: 'Prof. Prasanta K. Panigrahi',
